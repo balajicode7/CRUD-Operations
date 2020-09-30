@@ -1,0 +1,17 @@
+{% extends 'common.html' %}
+ {% block balu %}
+
+     <div class="row">
+     <div class="col-sm-8 offset-2">
+          <h4 class="text-center alert alert-info">Update Employee </h4>
+     <form action="" method="post">
+          {% csrf_token %}
+     {{ form.as_p }}
+     <input type="submit" class="btn btn-success" value="update">
+     <a href="{% url 'show' %}" class="btn btn-danger">Back to Home</a>
+     </form>
+     </div>
+     </div>
+
+
+ {% endblock %}
